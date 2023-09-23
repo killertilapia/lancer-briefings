@@ -100,7 +100,7 @@ export default {
         },
         {
           "slug": "002",
-          "name": "Land Train",
+          "name": "The Land Train",
           "status": "start"
         },
 
