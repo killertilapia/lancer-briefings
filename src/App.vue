@@ -89,9 +89,9 @@ export default {
 
   data() {
     return {
-      "mission_slug": "001",
-      "current_md": "",
-      "events": "",
+      "mission_slug": "002",
+      "current_md": "002",
+      "events": "002",
       "missions": [       
         {
           "slug": "001",
@@ -143,8 +143,8 @@ export default {
         "planet": "Izlude-4",
         "year": "5016u",
         "system": "Cancri",
-        "gate": "Rho-Epsilon",
-        "ring": "Atlas Line",
+        "gate": "Moldoveanu",
+        "ring": "Carpathian Line",
         "headerTitle": "Baxter",
         "headerSubtitle": "Trading Company",
         "subheaderTitle": "Security Response Unit",
