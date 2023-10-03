@@ -144,7 +144,7 @@ export default {
         "year": "5016u",
         "system": "Cancri",
         "gate": "Rho-Epsilon",
-        "ring": "Magellan Line",
+        "ring": "Atlas Line",
         "headerTitle": "Baxter",
         "headerSubtitle": "Trading Company",
         "subheaderTitle": "Security Response Unit",
