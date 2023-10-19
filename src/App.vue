@@ -94,14 +94,14 @@ export default {
       "events": "002",
       "missions": [       
         {
-          "slug": "001",
-          "name": "Dust bowl",
-          "status": "success"
-        },
-        {
           "slug": "002",
           "name": "The Land Train",
           "status": "start"
+        },
+        {
+          "slug": "001",
+          "name": "Dust bowl",
+          "status": "success"
         },
 
       ],
