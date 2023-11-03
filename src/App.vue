@@ -89,14 +89,19 @@ export default {
 
   data() {
     return {
-      "mission_slug": "002",
-      "current_md": "002",
-      "events": "002",
-      "missions": [       
+      "mission_slug": "003",
+      "current_md": "003",
+      "events": "003",
+      "missions": [      
+        {
+          "slug": "003",
+          "name": "The Land Train Leg 2",
+          "status": "start"
+        },         
         {
           "slug": "002",
-          "name": "The Land Train",
-          "status": "start"
+          "name": "The Land Train Leg 1",
+          "status": "success"
         },
         {
           "slug": "001",
