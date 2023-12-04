@@ -89,14 +89,19 @@ export default {
 
   data() {
     return {
-      "mission_slug": "003",
-      "current_md": "003",
-      "events": "003",
+      "mission_slug": "004",
+      "current_md": "004",
+      "events": "004",
       "missions": [      
+        {
+          "slug": "004",
+          "name": "City of Geth",
+          "status": "start"
+        }, 
         {
           "slug": "003",
           "name": "The Land Train Leg 2",
-          "status": "start"
+          "status": "success"
         },         
         {
           "slug": "002",
