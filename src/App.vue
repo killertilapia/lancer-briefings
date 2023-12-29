@@ -96,7 +96,7 @@ export default {
         {
           "slug": "005",
           "name": "Siege of Geth",
-          "status": "start"
+          "status": "partial-success"
         },         
         {
           "slug": "004",
