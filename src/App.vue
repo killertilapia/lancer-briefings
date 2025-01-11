@@ -7,7 +7,7 @@
         <h1>Mission Log</h1>
       </div>
       <div class="section-content-container">
-        <h3>Current Assignment</h3>
+        <h3>{{ missionHeaderText }}</h3>
         <Markdown :source="current_md" class="markdown" />
         <h3>Mission List</h3>
         <div class="mission-list-container">
@@ -125,9 +125,9 @@ export default {
           "callsign": "Hades",
           "alias": "Albus Stroheim",
           "code": "98ca9616-bd0f-41c2-b667-cc75f3a59a96///RHO-EPSILON-IZ4-STATION//377308ad-ba23-410b-ae37-68a1fb5f8db4",
-          "corpro": "HA",
+          "corpro": "HARRISON ARMORY",
           "frame": "ISKANDER",
-          "mech": "Schwarzer"
+          "mech": "IG-024 Schwarzer"
         },
         {
           "callsign": "Hummingbird",
@@ -150,7 +150,7 @@ export default {
           "callsign": "Lovecraft",
           "alias": "Seiji Howard",
           "code": "98ca9616-044e-4f87-b89b-aae4eb3387ec///RHO-EPSILON-IZ4-STATION//6f572259-6946-41bf-931a-e0543709e892",
-          "corpro": "HA",
+          "corpro": "HARRISON ARMORY",
           "frame": "BARBAROSSA",
           "mech": "Kyodai"
         },
@@ -178,7 +178,10 @@ export default {
   },
 
   computed: {
-
+    missionHeaderText(){
+      let mission = this.missions.find(e => e.slug === this.mission_slug);
+      return mission.status === 'start' ? "Current Assignment" : "Completed Assignment"
+    }
   },
 
   methods: {

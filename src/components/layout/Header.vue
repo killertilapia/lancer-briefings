@@ -13,11 +13,14 @@
         </div>
       </div>
     </div>
+    
+    
     <div class="rhombus">&nbsp;</div>
     <video autoplay muted loop width="90px" height="90px">
-      <source src="/planet.webm" type="video/webm" />
+      <source src="/ice_planet.webm" type="video/webm" />
     </video>
-    <div class="location-info">
+    
+    <div class="location-info" @click="planetModal">
       <div class="location-row" id="planet-year">
         <div id="planet">
           <h4>Deployment Info</h4>
@@ -42,24 +45,45 @@
           <span class="subtitle">{{ header.ring }}</span>
         </div>
       </div>
+      <div class="middle">
+			  <div class="text">&nbsp;</div>
+		  </div>
     </div>
   </header>
 </template>
 
 <script>
 
+import PlanetModal from '../PlanetModal.vue';
 
 export default {
   components: {
+    PlanetModal
   },
   props: {
     header: {
       type: Object,
       required: true,
     }
+  },
+  methods: {
+    planetModal(){      
+      this.$oruga.modal.open({
+        parent: this,
+        component: PlanetModal,
+        custom: true,
+        trapFocus: true,     
+        class: "planet-test" ,
+        width: 1920,
+      })
+    }
   }
 }
 </script>
 
 <style lang="scss" scoped>
+  .location-info:hover{
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.3);
+  }
 </style>
